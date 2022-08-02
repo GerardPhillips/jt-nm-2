@@ -1,0 +1,67 @@
+---
+fabric_name: JT_NM
+dc_name: JT_NM_FABRIC
+ANSIBLE_CONFIG: /home/user/avd/projects/ansible.cfg
+
+#cv_configlets:
+#  containers:
+#    AVD_L3LEAFS:
+#      - GLOBAL-ALIASES
+#  devices:
+#    AVD-SPINES:
+#      - GLOBAL-ALIASES
+#    DC1-L3LEAFS:
+#      - GLOBAL-ALIASES
+
+# local users
+local_users:
+  # Username with no password configured
+  admin:
+    privilege: 15
+    role: network-admin
+    sha512_password: $6$ttzoDdVO8Uz2SiBF$Ge.hQWy9wPGWyGc9.Q/mMyjycNO.9ylh40Vc.0iiqU/MtR7MKKIuOgbKkOeD3EpPMtN2SBForxog2ZCqv0kbu0
+    #password: "arista123!"
+
+
+# OOB Management network default gateway.
+mgmt_interface: Management1
+mgmt_gateway: 10.90.227.1
+mgmt_destination_networks:
+  - 0.0.0.0/0
+
+# dns servers.
+name_servers:
+  - 10.90.227.155
+
+# NTP Servers IP or DNS name, first NTP server will be preferred, and sourced from Management VRF
+ntp:
+  servers:
+  - name: 192.168.50.2
+    preferred: true
+  - name: 192.168.150.2
+
+# SNMP Settings
+#snmp_server:
+#  communities:
+#    ro:
+#      access: ro
+#    rw:
+#      access: rw
+
+# sFLow
+sflow:
+  destinations:
+    127.0.0.1:
+#    10.90.227.155:
+  source_interface: loopback0
+  run: true
+
+# Spanning tree
+spanning_tree:
+  mode: mstp
+
+event_monitor:
+  enabled: true
+
+
+  

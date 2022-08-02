@@ -1,0 +1,77 @@
+---
+type: spine
+
+spine:
+  defaults:
+    #fabric_name: JT_NM_FABRIC
+    platform: EOS
+    bgp_as: 65020
+    # Overlay loopback IP and same pool can be assigned to both spine and l3leaf switches
+    # If same loopback pool is defined for both spine and l3leaf,
+    # < loopback_ipv4_offset > must be set in either one of the node_types
+    loopback_ipv4_pool: 192.168.99.0/27
+    uplink_ipv4_pool: 192.168.99.92/27
+    # Recommended for vEOS
+    bgp_defaults:
+      - 'no bgp default ipv4-unicast'
+      - 'distance bgp 20 200 200'
+      - 'graceful-restart restart-time 300'
+      - 'graceful-restart'
+  nodes:
+    jt-nm-blue-spine-1:
+      id: 1
+      mgmt_ip: 10.90.227.11
+      # Interfaces configured on SUPER-SPINES to connect to this leaf
+      uplink_switch_interfaces: [Ethernet50/1]
+      uplink_switches: [jt-nm-mgt-1]
+      uplink_interfaces: [Ethernet7/3]  
+      ptp:  
+        priority1: 10
+        priority2: 11
+
+custom_structured_configuration_ethernet_interfaces:
+  Ethernet1/1:
+    pim:
+      ipv4:
+        sparse_mode: true
+  Ethernet2/1:
+    pim:
+      ipv4:
+        sparse_mode: true
+  Ethernet3/1:
+    pim:
+      ipv4:
+        sparse_mode: true
+  Ethernet4/1:
+    pim:
+      ipv4:
+        sparse_mode: true
+  Ethernet5/1:
+    pim:
+      ipv4:
+        sparse_mode: true
+  Ethernet6/1:
+    pim:
+      ipv4:
+        sparse_mode: true
+  Ethernet7/1:
+    pim:
+      ipv4:
+        sparse_mode: true
+  Ethernet7/2:
+    pim:
+      ipv4:
+        sparse_mode: true
+  Ethernet9/1:
+    pim:
+      ipv4:
+        sparse_mode: true
+  Ethernet10/1:
+    pim:
+      ipv4:
+        sparse_mode: true
+
+
+
+
+

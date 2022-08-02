@@ -1,0 +1,52 @@
+---
+pod_name: JT_NM_MGT_LEAFS
+type: l2leaf
+
+l2leaf:
+  defaults:
+    platform: EOS
+    #bgp_as: 65002
+    virtual_router_mac_address: 00:1c:73:00:dc:01
+    # VTEP VXLAN Tunnel source loopback IP for leaf switches, assigned in /32s
+    # Assign range larger than total leaf switches
+    vtep_loopback_ipv4_pool: 192.168.254.0/24
+    loopback_ipv4_pool: 192.168.98.0/27
+    # Offset must be >= number of spines
+    loopback_ipv4_offset: 2
+    # Point to Point Network Summary range, assigned as /31 for each
+    # uplink interfaces
+    # Assign range larger than total [spines * total potential leafs * 2]
+    uplink_ipv4_pool: 192.168.98.32/27
+    uplink_switches: [jt-nm-mgt-1]
+    uplink_interfaces: [Ethernet49/1]
+    #mlag_interfaces: [Ethernet3, Ethernet4]
+    # mlag pair IP assignment - assign blocks - Assign range larger than
+    # total spines + total leafs switches
+    #mlag_peer_ipv4_pool: 10.255.252.0/24
+    #mlag_peer_l3_ipv4_pool: 10.255.251.0/24
+  nodes:
+      jt-nm-mgt-2:
+        id: 2
+        mgmt_ip: 10.90.227.32
+        # Interface configured on SPINES to connect to this leaf
+        uplink_switch_interfaces: [Ethernet51]
+      jt-nm-mgt-3:
+        id: 3
+        mgmt_ip: 10.90.227.33
+        # Interface configured on SPINES to connect to this leaf
+        uplink_switch_interfaces: [Ethernet52]
+      jt-nm-mgt-4:
+        id: 4
+        mgmt_ip: 10.90.227.34
+        # Interface configured on SPINES to connect to this leaf
+        uplink_switch_interfaces: [Ethernet53]
+
+vlan_interfaces:
+  vlan1001:
+    description: Main OOB Network
+  vlan2001:
+    description: NMOS OOB Network 1
+  vlan2002:
+    description: NMOS OOB Network 2
+  vlan2003:
+    description: NMOS OOB Network 3

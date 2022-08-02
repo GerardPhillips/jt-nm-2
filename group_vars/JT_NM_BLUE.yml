@@ -1,0 +1,19 @@
+---
+#fabric_name: JT_NM_BLUE
+pod_name: JT_NM_BLUE
+ANSIBLE_CONFIG: /home/user/avd/projects/ansible.cfg
+
+#cv_configlets:
+#  containers:
+#    AVD_L3LEAFS:
+#      - GLOBAL-ALIASES
+#  devices:
+#    AVD-SPINES:
+#      - GLOBAL-ALIASES
+#    DC1-L3LEAFS:
+#      - GLOBAL-ALIASES
+
+router_pim_sparse_mode:
+  ipv4:
+    rp_addresses:
+      192.168.99.7:

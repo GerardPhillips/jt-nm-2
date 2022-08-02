@@ -1,0 +1,99 @@
+---
+JT_NM:
+  children:
+    #rename this it DC
+    JT_NM_FABRIC:
+      children:
+        JT_NM_OOB:
+          children:
+            JT_NM_MGT_SPINE:
+              hosts:
+                jt-nm-mgt-1:
+                  ansible_host: 10.90.227.30
+            JT_NM_MGT_LEAFS:
+              hosts:
+                jt-nm-mgt-2:
+                  ansible_host: 10.90.227.31
+                jt-nm-mgt-3:
+                  ansible_host: 10.90.227.31
+                jt-nm-mgt-4:
+                  ansible_host: 10.90.227.31
+            JT_NM_MGT_SERVERS:
+              children:
+                JT_NM_MGT_LEAFS:
+        JT_NM_MEDIA:
+          children:
+            JT_NM_AMBER:
+              children:
+                JT_NM_AMBER_SPINES:
+                  hosts:
+                    jt-nm-amber-spine-1:
+                      ansible_host: 10.90.227.11
+                JT_NM_AMBER_LEAFS:
+                  hosts:
+                    jt-nm-amber-leaf-1:
+                      ansible_host: 10.90.227.21
+                    jt-nm-amber-leaf-2:
+                      ansible_host: 10.90.227.23
+                    jt-nm-amber-leaf-3:
+                      ansible_host: 10.90.227.25
+                    jt-nm-amber-leaf-4:
+                      ansible_host: 10.90.227.27
+                    jt-nm-amber-leaf-5:
+                      ansible_host: 10.90.227.29
+            JT_NM_AMBER_SERVERS:
+              children:
+                JT_NM_AMBER_LEAFS:
+            JT_NM_BLUE:
+              children:
+                JT_NM_BLUE_SPINES:
+                  hosts:
+                    jt-nm-blue-spine-1:
+                      ansible_host: 10.90.227.11
+                JT_NM_BLUE_LEAFS:
+                  hosts:
+                    jt-nm-blue-leaf-1:
+                      ansible_host: 10.90.227.21
+                    jt-nm-blue-leaf-2:
+                      ansible_host: 10.90.227.23
+                    jt-nm-blue-leaf-3:
+                      ansible_host: 10.90.227.25
+                    jt-nm-blue-leaf-4:
+                      ansible_host: 10.90.227.27
+                    jt-nm-blue-leaf-5:
+                      ansible_host: 10.90.227.29
+            JT_NM_BLUE_SERVERS:
+              children:
+                JT_NM_BLUE_LEAFS:
+    #cloudvision:
+      #hosts:
+        #cv_server01:
+          #ansible_httpapi_host: 10.90.227.157
+          #ansible_host: 10.90.227.147
+          #ansible_user: admin
+          #ansible_password: arista123!
+          #ansible_connection: httpapi
+          #ansible_httpapi_use_ssl: True
+          #ansible_httpapi_validate_certs: False
+          #ansible_network_os: eos
+          #ansible_httpapi_port: 443
+          # Configuration to get Virtual Env information
+          #ansible_python_interpreter: $(which python3)
+  
+  vars:
+    ansible_network_os: eos
+    ansible_connection: network_cli
+    ansible_httpapi_user: admin
+    ansible_httpapi_password: arista123!
+    ansible_httpapi_use_ssl: True
+    ansible_httpapi_validate_certs: False
+    ansible_httpapi_port: 443
+    ansible_user: admin
+    ansible_password: arista123!
+    ansible_host_key_checking: False
+    ansible_become: yes
+    ansible_become_method: enable
+    ANSIBLE_CONFIG: /home/user/avd/projects/ansible.cfg
+    fabric_name: JT_NM_FABRIC
+
+    

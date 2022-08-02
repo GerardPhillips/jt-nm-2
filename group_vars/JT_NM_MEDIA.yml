@@ -1,0 +1,16 @@
+---
+ANSIBLE_CONFIG: /home/user/avd/projects/ansible.cfg
+
+router_multicast:
+  ipv4:
+    routing: true
+
+ptp:
+  mode: boundary
+  domain: 42
+  monitor:
+    threshold:
+      offset_from_master: 200
+
+
+  

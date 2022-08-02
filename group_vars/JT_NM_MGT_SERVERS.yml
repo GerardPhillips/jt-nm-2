@@ -1,0 +1,40 @@
+---
+fabric_name: JT_NM
+dc_name: JT_NM_FABRIC
+pod_name: JT_NM_MGT_LEAFS
+ANSIBLE_CONFIG: /home/user/avd/projects/ansible.cfg
+
+
+port_profiles:
+  MAIN:
+    mode: access
+    vlans: "1001"
+  NMOS_1:
+    mode: access
+    vlans: "2001"
+  NMOS_2:
+    mode: access
+    vlans: "2002"
+  NMOS_3:
+    mode: access
+    vlans: "2003"
+
+
+servers:
+  S1P1: # Server name
+    adapters:
+      - type: nic
+        endpoint_ports: [Eth0]      # Port on server/endpoint
+        switch_ports: [Ethernet1]   # Port on switch connected to the server/endpoint port
+        switches: [jt-nm-mgt-1]     # Switch connected to the server/endpoint
+        #profile: MAIN               # Port profile to apply
+        vlans: 11
+        mode: access
+  S1P2: # Server name
+    adapters:
+      - type: nic
+        endpoint_ports: [Eth0]      # Port on server/endpoint
+        switch_ports: [Ethernet2]   # Port on switch connected to the server/endpoint port
+        switches: [jt-nm-mgt-1]     # Switch connected to the server/endpoint
+        profile: MAIN               # Port profile to apply
+  
