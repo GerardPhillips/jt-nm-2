@@ -1,0 +1,5473 @@
+---
+- switches:
+    - "jt-nm-amber-leaf-1"
+  switch_ports:
+    - "Ethernet1"
+  description:  EBU LIST
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.10.2/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-1"
+  switch_ports:
+    - "Ethernet2"
+  description:  EBU LIST
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.10.6/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-1"
+  switch_ports:
+    - "Ethernet3"
+  description:  EVS Neuron
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.10.10/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-1"
+  switch_ports:
+    - "Ethernet4"
+  description:  DekTec DTA-2110
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.10.14/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-1"
+  switch_ports:
+    - "Ethernet5"
+  description:  Gefei NXIO
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.10.18/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-1"
+  switch_ports:
+    - "Ethernet6"
+  description:  Gefei NXIO
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.10.22/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-1"
+  switch_ports:
+    - "Ethernet7"
+  description:  Gefei NMVS
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.10.26/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-1"
+  switch_ports:
+    - "Ethernet8"
+  description:  Gefei NMVS
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.10.30/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-1"
+  switch_ports:
+    - "Ethernet9"
+  description:  Gefei NMVS
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.10.34/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-1"
+  switch_ports:
+    - "Ethernet10"
+  description:  Gefei NMVS
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.10.38/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-1"
+  switch_ports:
+    - "Ethernet11"
+  description:  Gefei MagiStream
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.10.42/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-1"
+  switch_ports:
+    - "Ethernet12"
+  description:  Gefei MagiStream
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.10.46/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-1"
+  switch_ports:
+    - "Ethernet13"
+  description:  Gefei NMIO
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.10.50/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-1"
+  switch_ports:
+    - "Ethernet14"
+  description:  Gefei NMIO
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.10.54/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-1"
+  switch_ports:
+    - "Ethernet15"
+  description:  Gefei NVIO
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.10.58/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-1"
+  switch_ports:
+    - "Ethernet16"
+  description:  Gefei NVIO
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.10.62/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-1"
+  switch_ports:
+    - "Ethernet17"
+  description:  EVS XT-VIA
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.10.66/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-1"
+  switch_ports:
+    - "Ethernet18"
+  description:  EVS XT-VIA
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.10.70/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-1"
+  switch_ports:
+    - "Ethernet19"
+  description:  EVS XT-VIA
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.10.74/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-1"
+  switch_ports:
+    - "Ethernet20"
+  description:  EVS XT-VIA
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.10.78/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-1"
+  switch_ports:
+    - "Ethernet21"
+  description:  EVS XT-VIA
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.10.82/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-1"
+  switch_ports:
+    - "Ethernet22"
+  description:  EVS XT-VIA
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.10.86/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-1"
+  switch_ports:
+    - "Ethernet23"
+  description:  EVS XT-VIA
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.10.90/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-1"
+  switch_ports:
+    - "Ethernet24"
+  description:  Ross Newt + Iggy
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.10.94/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-1"
+  switch_ports:
+    - "Ethernet25"
+  description:  Leader LV5600
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.10.98/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-1"
+  switch_ports:
+    - "Ethernet26"
+  description:  Phabrix QxL #1
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.10.102/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-1"
+  switch_ports:
+    - "Ethernet29"
+  description:  Macnica Easyss10
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.10.114/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-1"
+  switch_ports:
+    - "Ethernet30"
+  description:  NEC HD-IPO
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.10.118/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-1"
+  switch_ports:
+    - "Ethernet31"
+  description:  NEC HD-IPO
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.10.122/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-1"
+  switch_ports:
+    - "Ethernet51/1"
+  description:  EBU LIST
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.10.194/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-1"
+  switch_ports:
+    - "Ethernet52/1"
+  description:  EBU LIST
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.10.198/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-1"
+  switch_ports:
+    - "Ethernet54/1"
+  description:  EVS Neuron
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.10.206/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-1"
+  switch_ports:
+    - "Ethernet55/1"
+  description:  Imagine SNP Ref #1
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.10.210/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-1"
+  switch_ports:
+    - "Ethernet56/1"
+  description:  Imagine SNP - DuT
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.10.214/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-1"
+  switch_ports:
+    - "Ethernet57/1"
+  description:  Imagine SNP Ref #2
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.10.218/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-1"
+  switch_ports:
+    - "Ethernet58/1"
+  description:  Macnica Ip Core
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.10.222/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-1"
+  switch_ports:
+    - "Ethernet59/1"
+  description:  Macnica M2S
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.10.226/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet1"
+  description:  Gefei NXIO
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.2/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet2"
+  description:  Gefei NXIO
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.6/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet3"
+  description:  Gefei NMVS
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.10/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet4"
+  description:  Gefei NMVS
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.14/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet5"
+  description:  Gefei NMVS
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.18/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet6"
+  description:  Gefei NMVS
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.22/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet7"
+  description:  Gefei MagiStream
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.26/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet8"
+  description:  Gefei MagiStream
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.30/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet9"
+  description:  Gefei NMIO
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.34/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet10"
+  description:  Gefei NMIO
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.38/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet11"
+  description:  Gefei NVIO
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.42/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet12"
+  description:  Gefei NVIO
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.46/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet13"
+  description:  EVS Neuron
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.50/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet14"
+  description:  EVS XT-VIA
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.54/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet15"
+  description:  EVS XT-VIA
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.58/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet16"
+  description:  EVS XT-VIA
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.62/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet17"
+  description:  EVS XT-VIA
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.66/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet18"
+  description:  EVS XT-VIA
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.70/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet19"
+  description:  EVS XT-VIA
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.74/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet20"
+  description:  EVS XT-VIA
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.78/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet21"
+  description:  Leader LV5600
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.82/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet22"
+  description:  Phabrix QxL #1
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.86/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet24"
+  description:  Pebble Integrated Channel
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.94/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet25"
+  description:  Ross Newt + Iggy
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.98/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet26"
+  description:  NEC HD-IPO
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.102/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet27"
+  description:  NEC HD-IPO
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.106/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet28"
+  description:  Macnica Easyss10
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.110/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet29"
+  description:  Matrox Vero #1
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.114/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet30"
+  description:  Matrox Vero #2
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.118/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet32"
+  description:  Telestream PRISM MPD300
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.126/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet33"
+  description:  Matrox DSS-TX #1&#2
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.130/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet34"
+  description:  Matrox DSS-TX #1&#2
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.134/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet35"
+  description:  Matrox DSS-RX
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.138/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet36"
+  description:  Matrox DSH-RX
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.142/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet37"
+  description:  Cobalt Digital Indigo 2110-DC-01
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.146/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet38"
+  description:  Cobalt Digital Indigo 2110-DC-01
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.150/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet39"
+  description:  Appear ECx210 Encoder
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.154/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet40"
+  description:  Appear ECx210 Encoder
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.158/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet41"
+  description:  Appear ECx210 Encoder
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.162/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet42"
+  description:  Appear ECx210 Encoder
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.166/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet43"
+  description:  Appear ECx210 Encoder
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.170/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet44"
+  description:  Appear ECx210 Encoder
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.174/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet45"
+  description:  Ross Ultrix FR-5
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.178/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet46"
+  description:  Ross Ultrix FR-5
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.182/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet51/1"
+  description:  EVS Neuron
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.194/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet52/1"
+  description:  Imagine SNP Ref #1
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.198/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet53/3"
+  description:  Imagine SNP Ref #1
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.202/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-1"
+  switch_ports:
+    - "Ethernet54/1"
+  description:  Imagine SNP Ref #2
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.110.206/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-2"
+  switch_ports:
+    - "Ethernet1"
+  description:  Matrox Vero #1
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.20.2/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-2"
+  switch_ports:
+    - "Ethernet2"
+  description:  Matrox Vero #2
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.20.6/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-2"
+  switch_ports:
+    - "Ethernet3"
+  description:  Pebble Integrated Channel
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.20.10/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-2"
+  switch_ports:
+    - "Ethernet4"
+  description:  Telestream PRISM MPD300
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.20.14/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-2"
+  switch_ports:
+    - "Ethernet5"
+  description:  Matrox DSS-TX #1
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.20.18/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-2"
+  switch_ports:
+    - "Ethernet6"
+  description:  Matrox DSS-TX #2
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.20.22/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-2"
+  switch_ports:
+    - "Ethernet7"
+  description:  Matrox DSS-RX
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.20.26/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-2"
+  switch_ports:
+    - "Ethernet8"
+  description:  Matrox DSH-RX
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.20.30/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-2"
+  switch_ports:
+    - "Ethernet9"
+  description:  Cobalt Digital Indigo 2110-DC-01
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.20.34/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-2"
+  switch_ports:
+    - "Ethernet10"
+  description:  Cobalt Digital Indigo 2110-DC-01
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.20.38/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-2"
+  switch_ports:
+    - "Ethernet11"
+  description:  Appear ECx210 Encoder
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.20.42/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-2"
+  switch_ports:
+    - "Ethernet12"
+  description:  Appear ECx210 Encoder
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.20.46/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-2"
+  switch_ports:
+    - "Ethernet13"
+  description:  Appear ECx210 Encoder
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.20.50/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-2"
+  switch_ports:
+    - "Ethernet14"
+  description:  Appear ECx210 Encoder
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.20.54/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-2"
+  switch_ports:
+    - "Ethernet15"
+  description:  Appear ECx210 Encoder
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.20.58/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-2"
+  switch_ports:
+    - "Ethernet16"
+  description:  Appear ECx210 Encoder
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.20.62/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-2"
+  switch_ports:
+    - "Ethernet17"
+  description:  Ross Ultrix FR-5
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.20.66/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-2"
+  switch_ports:
+    - "Ethernet18"
+  description:  Ross Ultrix FR-5
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.20.70/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-2"
+  switch_ports:
+    - "Ethernet19"
+  description:  Village Island VICO ENC
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.20.74/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-2"
+  switch_ports:
+    - "Ethernet20"
+  description:  Village Island VICO DEC
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.20.78/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-2"
+  switch_ports:
+    - "Ethernet21"
+  description:  Village Island VICO ENC
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.20.82/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-2"
+  switch_ports:
+    - "Ethernet22"
+  description:  Village Island VICO DEC
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.20.86/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-2"
+  switch_ports:
+    - "Ethernet23"
+  description:  Phabrix SxTAG
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.20.90/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-2"
+  switch_ports:
+    - "Ethernet24"
+  description:  Phabrix SxTAG
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.20.94/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-2"
+  switch_ports:
+    - "Ethernet25"
+  description:  Phabrix Qxl
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.20.98/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-2"
+  switch_ports:
+    - "Ethernet26"
+  description:  GrassValley LDX 150
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.20.102/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-2"
+  switch_ports:
+    - "Ethernet28"
+  description:  GrassValley AMPP
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.20.110/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-2"
+  switch_ports:
+    - "Ethernet29"
+  description:  Riedel FusioNs
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.20.114/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-2"
+  switch_ports:
+    - "Ethernet30"
+  description:  Riedel FusioNs
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.20.118/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-2"
+  switch_ports:
+    - "Ethernet31"
+  description:  Riedel FusioNs
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.20.122/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-2"
+  switch_ports:
+    - "Ethernet32"
+  description:  Riedel FusioNs
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.20.126/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-2"
+  switch_ports:
+    - "Ethernet33"
+  description:  GrassValley XCU Universe UXF
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.20.130/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-2"
+  switch_ports:
+    - "Ethernet34"
+  description:  GrassValley XCU Universe UXF
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.20.134/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-2"
+  switch_ports:
+    - "Ethernet51/1"
+  description:  Telestream Inspect 2110
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.20.194/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-2"
+  switch_ports:
+    - "Ethernet52/1"
+  description:  Appear ECx210 Encoder
+  speed: 40Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.20.198/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-2"
+  switch_ports:
+    - "Ethernet53/3"
+  description:  Appear ECx210 Encoder
+  speed: 40Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.20.202/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-2"
+  switch_ports:
+    - "Ethernet54/1"
+  description:  Appear ECx210 Encoder
+  speed: 40Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.20.206/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-2"
+  switch_ports:
+    - "Ethernet55/1"
+  description:  Appear ECx210 Encoder
+  speed: 40Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.20.210/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-2"
+  switch_ports:
+    - "Ethernet56/1"
+  description:  Riedel MuoN B #1 & #2
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.20.214/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-2"
+  switch_ports:
+    - "Ethernet1"
+  description:  Village Island VICO ENC
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.120.2/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-2"
+  switch_ports:
+    - "Ethernet2"
+  description:  Village Island VICO DEC
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.120.6/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-2"
+  switch_ports:
+    - "Ethernet3"
+  description:  GrassValley LDX 150
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.120.10/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-2"
+  switch_ports:
+    - "Ethernet4"
+  description:  GrassValley AMPP
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.120.14/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-2"
+  switch_ports:
+    - "Ethernet5"
+  description:  Phabrix Qxl
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.120.18/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-2"
+  switch_ports:
+    - "Ethernet6"
+  description:  GrassValley XCU Universe UXF
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.120.22/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-2"
+  switch_ports:
+    - "Ethernet7"
+  description:  GrassValley XCU Universe UXF
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.120.26/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-2"
+  switch_ports:
+    - "Ethernet9"
+  description:  Riedel FusioNs
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.120.34/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-2"
+  switch_ports:
+    - "Ethernet10"
+  description:  Riedel FusioNs
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.120.38/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-2"
+  switch_ports:
+    - "Ethernet11"
+  description:  Riedel FusioNs
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.120.42/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-2"
+  switch_ports:
+    - "Ethernet12"
+  description:  Riedel FusioNs
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.120.46/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-2"
+  switch_ports:
+    - "Ethernet13"
+  description:  GrassValley XIP-3901
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.120.50/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-2"
+  switch_ports:
+    - "Ethernet14"
+  description:  GrassValley XIP-3901
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.120.54/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-2"
+  switch_ports:
+    - "Ethernet15"
+  description:  GrassValley XIP-3901
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.120.58/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-2"
+  switch_ports:
+    - "Ethernet16"
+  description:  Vizrt VizEngine
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.120.62/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-2"
+  switch_ports:
+    - "Ethernet17"
+  description:  MediaKind RX1
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.120.66/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-2"
+  switch_ports:
+    - "Ethernet18"
+  description:  MediaKind CE1
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.120.70/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-2"
+  switch_ports:
+    - "Ethernet19"
+  description:  MediaKind Aquila
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.120.74/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-2"
+  switch_ports:
+    - "Ethernet20"
+  description:  Telestream PRISM MIPI2-25 #1
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.120.78/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-2"
+  switch_ports:
+    - "Ethernet21"
+  description:  Panasonic AK-NP600
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.120.82/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-2"
+  switch_ports:
+    - "Ethernet22"
+  description:  Evertz Magnum
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.120.86/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-2"
+  switch_ports:
+    - "Ethernet23"
+  description:  Sumavision S010
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.120.90/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-2"
+  switch_ports:
+    - "Ethernet24"
+  description:  Telestream PRISM MPI2-25 #2
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.120.94/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-2"
+  switch_ports:
+    - "Ethernet25"
+  description:  Sony HDCE Series
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.120.98/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-2"
+  switch_ports:
+    - "Ethernet26"
+  description:  Sony HDCU Series
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.120.102/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-2"
+  switch_ports:
+    - "Ethernet27"
+  description:  Sencore MRD 7000
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.120.106/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-2"
+  switch_ports:
+    - "Ethernet28"
+  description:  Sumavision S010
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.120.110/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-2"
+  switch_ports:
+    - "Ethernet29"
+  description:  7th Sense Juggler 2
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.120.114/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-2"
+  switch_ports:
+    - "Ethernet30"
+  description:  7th Sense Juggler 2
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.120.118/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-2"
+  switch_ports:
+    - "Ethernet31"
+  description:  Telestream Prism MPS300
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.120.122/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-2"
+  switch_ports:
+    - "Ethernet33"
+  description:  Evertz Scorpio
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.120.130/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-2"
+  switch_ports:
+    - "Ethernet34"
+  description:  Evertz 670-X19
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.120.134/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-2"
+  switch_ports:
+    - "Ethernet36"
+  description:  Adeas/Nextera
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.120.142/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-2"
+  switch_ports:
+    - "Ethernet37"
+  description:  Adeas/Nextera
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.120.146/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-2"
+  switch_ports:
+    - "Ethernet38"
+  description:  Adeas/Nextera
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.120.150/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-2"
+  switch_ports:
+    - "Ethernet39"
+  description:  
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.120.154/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-2"
+  switch_ports:
+    - "Ethernet51/1"
+  description:  Appear ECx210 Encoder
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.120.194/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-2"
+  switch_ports:
+    - "Ethernet52/1"
+  description:  Appear ECx210 Encoder
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.120.198/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-2"
+  switch_ports:
+    - "Ethernet53/3"
+  description:  Appear ECx210 Encoder
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.120.202/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-2"
+  switch_ports:
+    - "Ethernet54/1"
+  description:  Appear ECx210 Encoder
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.120.206/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-3"
+  switch_ports:
+    - "Ethernet1"
+  description:  MediaKind RX1
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.30.2/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-3"
+  switch_ports:
+    - "Ethernet2"
+  description:  MediaKind CE1
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.30.6/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-3"
+  switch_ports:
+    - "Ethernet3"
+  description:  MediaKind Aquila
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.30.10/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-3"
+  switch_ports:
+    - "Ethernet4"
+  description:  Telestream PRISM MIPI2-25 #1
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.30.14/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-3"
+  switch_ports:
+    - "Ethernet5"
+  description:  Panasonic AK-NP600
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.30.18/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-3"
+  switch_ports:
+    - "Ethernet6"
+  description:  PacketStorm 8XG
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.30.22/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-3"
+  switch_ports:
+    - "Ethernet7"
+  description:  Sumavision S010
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.30.26/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-3"
+  switch_ports:
+    - "Ethernet9"
+  description:  Sony HDCE Series
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.30.34/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-3"
+  switch_ports:
+    - "Ethernet10"
+  description:  Sony HDCU Series
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.30.38/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-3"
+  switch_ports:
+    - "Ethernet11"
+  description:  PacketStorm 8XG
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.30.42/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-3"
+  switch_ports:
+    - "Ethernet12"
+  description:  PacketStorm 8XG
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.30.46/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-3"
+  switch_ports:
+    - "Ethernet13"
+  description:  PacketStorm 8XG
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.30.50/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-3"
+  switch_ports:
+    - "Ethernet14"
+  description:  PacketStorm 8XG
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.30.54/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-3"
+  switch_ports:
+    - "Ethernet15"
+  description:  Vizrt VizEngine
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.30.58/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-3"
+  switch_ports:
+    - "Ethernet16"
+  description:  Sencore MRD 7000
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.30.62/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-3"
+  switch_ports:
+    - "Ethernet17"
+  description:  Sumavision S010
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.30.66/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-3"
+  switch_ports:
+    - "Ethernet18"
+  description:  Nevion Virtuoso
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.30.70/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-3"
+  switch_ports:
+    - "Ethernet19"
+  description:  Nevion Virtuoso
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.30.74/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-3"
+  switch_ports:
+    - "Ethernet20"
+  description:  Telestream Prism MPS300
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.30.78/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-3"
+  switch_ports:
+    - "Ethernet21"
+  description:  Nevion Virtuoso
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.30.82/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-3"
+  switch_ports:
+    - "Ethernet22"
+  description:  Nevion Virtuoso
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.30.86/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-3"
+  switch_ports:
+    - "Ethernet23"
+  description:  Telestream PRISM MPI2-25 #2
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.30.90/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-3"
+  switch_ports:
+    - "Ethernet25"
+  description:  Adeas/Nextera
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.30.98/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-3"
+  switch_ports:
+    - "Ethernet26"
+  description:  Adeas/Nextera
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.30.102/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-3"
+  switch_ports:
+    - "Ethernet27"
+  description:  Evertz Magnum
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.30.106/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-3"
+  switch_ports:
+    - "Ethernet29"
+  description:  Adeas/Nextera
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.30.114/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-3"
+  switch_ports:
+    - "Ethernet30"
+  description:  Adeas/Nextera
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.30.118/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-3"
+  switch_ports:
+    - "Ethernet31"
+  description:  7th Sense Juggler 2
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.30.122/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-3"
+  switch_ports:
+    - "Ethernet32"
+  description:  7th Sense Juggler 2
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.30.126/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-3"
+  switch_ports:
+    - "Ethernet33"
+  description:  Evertz Scorpio
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.30.130/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-3"
+  switch_ports:
+    - "Ethernet34"
+  description:  Evertz 670-X19
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.30.134/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-3"
+  switch_ports:
+    - "Ethernet35"
+  description:  AWS
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.30.138/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-3"
+  switch_ports:
+    - "Ethernet36"
+  description:  AWS
+  speed: 25Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.30.142/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-3"
+  switch_ports:
+    - "Ethernet51/1"
+  description:  Nvidia RIvermax
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.30.194/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-3"
+  switch_ports:
+    - "Ethernet52/1"
+  description:  Nvidia RIvermax
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.30.198/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-3"
+  switch_ports:
+    - "Ethernet53/3"
+  description:  Nvidia RIvermax
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.30.202/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-3"
+  switch_ports:
+    - "Ethernet54/1"
+  description:  Deltacast IP VirtualCard
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.30.206/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-4"
+  switch_ports:
+    - "Ethernet1"
+  description:  Riedel Control Panel App
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.40.2/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-4"
+  switch_ports:
+    - "Ethernet3"
+  description:  DirectOut Montone
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.40.10/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-4"
+  switch_ports:
+    - "Ethernet4"
+  description:  DirectOut Prodigy
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.40.14/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-4"
+  switch_ports:
+    - "Ethernet5"
+  description:  DirectOut Andiamo
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.40.18/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-4"
+  switch_ports:
+    - "Ethernet6"
+  description:  DirectOut EXBOX
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.40.22/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-4"
+  switch_ports:
+    - "Ethernet7"
+  description:  Ross BACH
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.40.26/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-4"
+  switch_ports:
+    - "Ethernet8"
+  description:  Ross BACH
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.40.30/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-4"
+  switch_ports:
+    - "Ethernet9"
+  description:  Ross BACH
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.40.34/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-4"
+  switch_ports:
+    - "Ethernet11"
+  description:  Riedel AMMA 1216
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.40.42/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-4"
+  switch_ports:
+    - "Ethernet12"
+  description:  RIedel AMMA 1232
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.40.46/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-4"
+  switch_ports:
+    - "Ethernet13"
+  description:  Riedel RSP-1232
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.40.50/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-4"
+  switch_ports:
+    - "Ethernet14"
+  description:  Riedel Artist 32
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.40.54/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-4"
+  switch_ports:
+    - "Ethernet15"
+  description:  Riedel Artist 32
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.40.58/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-4"
+  switch_ports:
+    - "Ethernet16"
+  description:  Riedel Artist 1024
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.40.62/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-4"
+  switch_ports:
+    - "Ethernet17"
+  description:  Riedel Artist 1024
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.40.66/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-4"
+  switch_ports:
+    - "Ethernet19"
+  description:  Calrec Impulse Core
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.40.74/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-4"
+  switch_ports:
+    - "Ethernet20"
+  description:  Calrec Impulse Core
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.40.78/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-4"
+  switch_ports:
+    - "Ethernet21"
+  description:  Calrec Impulse Core
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.40.82/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-4"
+  switch_ports:
+    - "Ethernet22"
+  description:  Calrec Impulse Core
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.40.86/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-4"
+  switch_ports:
+    - "Ethernet23"
+  description:  Calrec Impulse Core
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.40.90/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-4"
+  switch_ports:
+    - "Ethernet24"
+  description:  Calrec Impulse Core
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.40.94/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-4"
+  switch_ports:
+    - "Ethernet25"
+  description:  Calrec Type R Core
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.40.98/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-4"
+  switch_ports:
+    - "Ethernet26"
+  description:  Calrec Type R
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.40.102/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-4"
+  switch_ports:
+    - "Ethernet27"
+  description:  Calrec Modular
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.40.106/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-4"
+  switch_ports:
+    - "Ethernet28"
+  description:  Calrec Modular
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.40.110/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-4"
+  switch_ports:
+    - "Ethernet29"
+  description:  Calrec Fixed Format
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.40.114/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-4"
+  switch_ports:
+    - "Ethernet31"
+  description:  Ross Newt + Iggy
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.40.122/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-4"
+  switch_ports:
+    - "Ethernet32"
+  description:  Ross Newt + Iggy
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.40.126/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-4"
+  switch_ports:
+    - "Ethernet37"
+  description:  Lawo Home
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.40.146/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-4"
+  switch_ports:
+    - "Ethernet38"
+  description:  Lawo Home
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.40.150/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-4"
+  switch_ports:
+    - "Ethernet39"
+  description:  Lawo Home
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.40.154/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-4"
+  switch_ports:
+    - "Ethernet2"
+  description:  DirectOut Montone
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.140.6/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-4"
+  switch_ports:
+    - "Ethernet3"
+  description:  DirectOut Prodigy
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.140.10/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-4"
+  switch_ports:
+    - "Ethernet4"
+  description:  DirectOut Andiamo
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.140.14/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-4"
+  switch_ports:
+    - "Ethernet5"
+  description:  DirectOut EXBOX
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.140.18/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-4"
+  switch_ports:
+    - "Ethernet6"
+  description:  Ross BACH
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.140.22/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-4"
+  switch_ports:
+    - "Ethernet7"
+  description:  Ross BACH
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.140.26/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-4"
+  switch_ports:
+    - "Ethernet8"
+  description:  Ross BACH
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.140.30/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-4"
+  switch_ports:
+    - "Ethernet9"
+  description:  Ross Newt + Iggy
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.140.34/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-4"
+  switch_ports:
+    - "Ethernet10"
+  description:  Ross Newt + Iggy
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.140.38/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-4"
+  switch_ports:
+    - "Ethernet12"
+  description:  Riedel Artist 1024
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.140.46/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-4"
+  switch_ports:
+    - "Ethernet14"
+  description:  Calrec Impulse Core
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.140.54/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-4"
+  switch_ports:
+    - "Ethernet15"
+  description:  Calrec Impulse Core
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.140.58/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-4"
+  switch_ports:
+    - "Ethernet16"
+  description:  Calrec Impulse Core
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.140.62/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-4"
+  switch_ports:
+    - "Ethernet17"
+  description:  Calrec Impulse Core
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.140.66/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-4"
+  switch_ports:
+    - "Ethernet18"
+  description:  Calrec Impulse Core
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.140.70/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-4"
+  switch_ports:
+    - "Ethernet19"
+  description:  Calrec Impulse Core
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.140.74/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-4"
+  switch_ports:
+    - "Ethernet20"
+  description:  Calrec Type R Core
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.140.78/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-4"
+  switch_ports:
+    - "Ethernet21"
+  description:  Calrec Type R
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.140.82/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-4"
+  switch_ports:
+    - "Ethernet22"
+  description:  Calrec Modular
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.140.86/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-4"
+  switch_ports:
+    - "Ethernet23"
+  description:  Calrec Modular
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.140.90/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-4"
+  switch_ports:
+    - "Ethernet24"
+  description:  Calrec Fixed Format
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.140.94/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-4"
+  switch_ports:
+    - "Ethernet29"
+  description:  Lawo Home
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.140.114/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-4"
+  switch_ports:
+    - "Ethernet30"
+  description:  Lawo Home
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.140.118/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-4"
+  switch_ports:
+    - "Ethernet31"
+  description:  Lawo Home
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.140.122/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-5"
+  switch_ports:
+    - "Ethernet1"
+  description:  Telestream SPG8000A #1
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.50.2/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-5"
+  switch_ports:
+    - "Ethernet2"
+  description:  Telestream SPG8000A #1
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.50.6/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-5"
+  switch_ports:
+    - "Ethernet3"
+  description:  Telestream SPG8000A
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.50.10/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-5"
+  switch_ports:
+    - "Ethernet4"
+  description:  Telestream SPG8000A
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.50.14/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-5"
+  switch_ports:
+    - "Ethernet5"
+  description:  EEG Alta
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.50.18/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-5"
+  switch_ports:
+    - "Ethernet7"
+  description:  MERGING Anubis
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.50.26/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-5"
+  switch_ports:
+    - "Ethernet9"
+  description:  Adeas/Nextera
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.50.34/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-5"
+  switch_ports:
+    - "Ethernet11"
+  description:  Evertz Magnum
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.50.42/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-5"
+  switch_ports:
+    - "Ethernet12"
+  description:  Evertz Scorpio
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.50.46/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-5"
+  switch_ports:
+    - "Ethernet13"
+  description:  Evertz 670-X19
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.50.50/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-leaf-5"
+  switch_ports:
+    - "Ethernet14"
+  description:  Evertz ev670-X30
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.50.54/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-5"
+  switch_ports:
+    - "Ethernet1"
+  description:  Telestream SPG8000A #1
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.150.2/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-5"
+  switch_ports:
+    - "Ethernet2"
+  description:  EEG Alta
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.150.6/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-5"
+  switch_ports:
+    - "Ethernet3"
+  description:  MERGING Anubis
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.150.10/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-5"
+  switch_ports:
+    - "Ethernet4"
+  description:  Evertz Magnum
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.150.14/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-5"
+  switch_ports:
+    - "Ethernet5"
+  description:  Telestream SPG8000A
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.150.18/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-spine-1"
+  switch_ports:
+    - "Ethernet13/1"
+  description:  Panasonic Kairos AT-KC100
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.70.2/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-spine-1"
+  switch_ports:
+    - "Ethernet14/1"
+  description:  Panasonic Kairos AT-KC1000
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.70.6/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-spine-1"
+  switch_ports:
+    - "Ethernet15/1"
+  description:  PacketStorm CRS (1)
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.70.10/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-spine-1"
+  switch_ports:
+    - "Ethernet16/1"
+  description:  PacketStorm CRS (1)
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.70.14/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-spine-1"
+  switch_ports:
+    - "Ethernet17/1"
+  description:  PacketStorm CRS (2)
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.70.18/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-spine-1"
+  switch_ports:
+    - "Ethernet18/1"
+  description:  PacketStorm CRS (2)
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.70.22/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-spine-1"
+  switch_ports:
+    - "Ethernet19/1"
+  description:  PacketStorm VIP Monitor
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.70.26/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-spine-1"
+  switch_ports:
+    - "Ethernet20/1"
+  description:  PacketStorm VIP Monitor
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.70.30/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-spine-1"
+  switch_ports:
+    - "Ethernet21/1"
+  description:  Arkona AT300
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.70.34/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-spine-1"
+  switch_ports:
+    - "Ethernet22/1"
+  description:  7th Sense Infinity
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.70.38/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-spine-1"
+  switch_ports:
+    - "Ethernet25/1"
+  description:  Bridge Tech VB440
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.70.50/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-spine-1"
+  switch_ports:
+    - "Ethernet26/1"
+  description:  Bridge Tech VB440
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.70.54/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-spine-1"
+  switch_ports:
+    - "Ethernet27/1"
+  description:  Bridge Tech VB440
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.70.58/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-spine-1"
+  switch_ports:
+    - "Ethernet28/1"
+  description:  Bridge Tech VB440
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.70.62/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-amber-spine-1"
+  switch_ports:
+    - "Ethernet29/1"
+  description:  Evertz ev670-X30
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.70.66/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-spine-1"
+  switch_ports:
+    - "Ethernet13/1"
+  description:  Macnica Ip Core
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.170.2/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-spine-1"
+  switch_ports:
+    - "Ethernet14/1"
+  description:  Macnica M2S
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.170.6/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-spine-1"
+  switch_ports:
+    - "Ethernet15/1"
+  description:  Telestream Inspect 2110
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.170.10/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-spine-1"
+  switch_ports:
+    - "Ethernet17/1"
+  description:  Riedel MuoN B #1 & #2
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.170.18/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-spine-1"
+  switch_ports:
+    - "Ethernet19/1"
+  description:  Arkona AT300
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.170.26/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-spine-1"
+  switch_ports:
+    - "Ethernet20/1"
+  description:  Panasonic Kairos AT-KC100
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.170.30/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-spine-1"
+  switch_ports:
+    - "Ethernet21/1"
+  description:  Panasonic Kairos AT-KC1000
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.170.34/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-spine-1"
+  switch_ports:
+    - "Ethernet22/1"
+  description:  Deltacast IP VirtualCard
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.170.38/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-spine-1"
+  switch_ports:
+    - "Ethernet23/1"
+  description:  Nvidia RIvermax
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.170.42/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-spine-1"
+  switch_ports:
+    - "Ethernet24/1"
+  description:  Nvidia RIvermax
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.170.46/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-spine-1"
+  switch_ports:
+    - "Ethernet25/1"
+  description:  Nvidia RIvermax
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.170.50/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-spine-1"
+  switch_ports:
+    - "Ethernet26/1"
+  description:  7th Sense Infinity
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.170.54/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-spine-1"
+  switch_ports:
+    - "Ethernet27/1"
+  description:  Evertz ev670-X30
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.170.58/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-spine-1"
+  switch_ports:
+    - "Ethernet29/1"
+  description:  Bridge Tech VB440
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.170.66/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-spine-1"
+  switch_ports:
+    - "Ethernet30/1"
+  description:  Bridge Tech VB440
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.170.70/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-spine-1"
+  switch_ports:
+    - "Ethernet31/1"
+  description:  Bridge Tech VB440
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.170.74/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-spine-1"
+  switch_ports:
+    - "Ethernet32/1"
+  description:  Bridge Tech VB440
+  speed: 100Gfull
+  structured_config:
+    type: routed
+    ip_address: 192.168.170.78/30
+    pim:
+      ipv4:
+        sparse_mode: true
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+    role: bmca
+

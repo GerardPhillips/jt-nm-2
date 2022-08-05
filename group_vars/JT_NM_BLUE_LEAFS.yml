@@ -1,14 +1,9 @@
 ---
-type: l3leaf
+type: media_leaf
 
-l3leaf:
+media_leaf:
   defaults:
-    platform: EOS
-    #bgp_as: 65002
     virtual_router_mac_address: 00:1c:73:00:dc:01
-    # VTEP VXLAN Tunnel source loopback IP for leaf switches, assigned in /32s
-    # Assign range larger than total leaf switches
-    vtep_loopback_ipv4_pool: 192.168.254.0/24
     loopback_ipv4_pool: 192.168.99.0/27
     # Offset must be >= number of spines
     loopback_ipv4_offset: 2
@@ -18,63 +13,46 @@ l3leaf:
     uplink_ipv4_pool: 192.168.99.64/27
     uplink_switches: [jt-nm-blue-spine-1, jt-nm-blue-spine-1]
     uplink_interfaces: [Ethernet49/1, Ethernet50/1]
-    #mlag_interfaces: [Ethernet3, Ethernet4]
-    # mlag pair IP assignment - assign blocks - Assign range larger than
-    # total spines + total leafs switches
-    #mlag_peer_ipv4_pool: 10.255.252.0/24
-    #mlag_peer_l3_ipv4_pool: 10.255.251.0/24
+    max_parallel_uplinks: 2 # per leaf / per spine
   nodes:
       jt-nm-blue-leaf-1:
+        platform: 7280R2
         id: 1
         bgp_as: 65021
-        mgmt_ip: 10.90.227.25
+        mgmt_ip: 192.168.0.12
         # Interfaces configured on SPINES to connect to this leaf
         uplink_switch_interfaces: [Ethernet1/1, Ethernet2/1]
-        ptp:  
-        priority1: 20
-        priority2: 21
       jt-nm-blue-leaf-2:
+        platform: 7280R2
         id: 2
         bgp_as: 65022
-        mgmt_ip: 10.90.227.27
+        mgmt_ip: 192.168.0.13
         # Interface configured on SPINES to connect to this leaf
         uplink_switch_interfaces: [Ethernet3/1, Ethernet4/1]
-        ptp:  
-        priority1: 20
-        priority2: 22
       jt-nm-blue-leaf-3:
+        platform: 7050X2
         id: 3
         bgp_as: 65023
-        mgmt_ip: 10.90.227.29
+        mgmt_ip: 192.168.0.14
         # Interface configured on SPINES to connect to this leaf
         uplink_switch_interfaces: [Ethernet5/1, Ethernet6/1]
-        ptp:  
-        priority1: 20
-        priority2: 23
       jt-nm-blue-leaf-4:
+        platform: 720XP
         id: 4
         bgp_as: 65024
-        mgmt_ip: 10.90.227.31
+        mgmt_ip: 192.168.0.15
         # Interface configured on SPINES to connect to this leaf
         uplink_switch_interfaces: [Ethernet7/1, Ethernet7/2]
-        ptp:  
-        priority1: 20
-        priority2: 24
+        uplink_interfaces: [Ethernet49, Ethernet50]
+        uplink_interface_speed: 10000full
       jt-nm-blue-leaf-5:
+        platform: 7020R
         id: 5
         bgp_as: 65025
-        mgmt_ip: 10.90.227.31
+        mgmt_ip: 192.168.0.16
         # Interface configured on SPINES to connect to this leaf
         uplink_switch_interfaces: [Ethernet9/1, Ethernet10/1]
-        ptp:  
-        priority1: 20
-        priority2: 25
-custom_structured_configuration_ethernet_interfaces:
-  Ethernet49/1:
-    pim:
-      ipv4:
-        sparse_mode: true
-  Ethernet50/1:
-    pim:
-      ipv4:
-        sparse_mode: true
+        uplink_interfaces: [Ethernet49, Ethernet50]
+        ptp:
+          priority1: 10
+

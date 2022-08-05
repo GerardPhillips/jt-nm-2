@@ -1,17 +1,38 @@
 ---
 fabric_name: JT_NM
 dc_name: JT_NM_FABRIC
-ANSIBLE_CONFIG: /home/user/avd/projects/ansible.cfg
 
-#cv_configlets:
-#  containers:
-#    AVD_L3LEAFS:
-#      - GLOBAL-ALIASES
-#  devices:
-#    AVD-SPINES:
-#      - GLOBAL-ALIASES
-#    DC1-L3LEAFS:
-#      - GLOBAL-ALIASES
+node_type_keys:
+  media_spine:
+    type: media_spine
+    default_overlay_routing_protocol: none
+    connected_endpoints: true
+    network_services:
+      l2: true
+      l3: true
+    default_ptp_priority1: 20
+  media_leaf:
+    type: media_leaf
+    default_overlay_routing_protocol: none
+    connected_endpoints: true
+    network_services:
+      l2: true
+      l3: true
+    default_ptp_priority1: 30
+  mgt_spine:
+    type: mgt_spine
+    default_overlay_routing_protocol: none
+    connected_endpoints: true
+    network_services:
+      l2: true
+      l3: true
+  mgt_leaf:
+    type: mgt_leaf
+    connected_endpoints: true
+    network_services:
+      l2: true
+    uplink_type: port-channel
+    underlay_router: false
 
 # local users
 local_users:
@@ -21,7 +42,6 @@ local_users:
     role: network-admin
     sha512_password: $6$ttzoDdVO8Uz2SiBF$Ge.hQWy9wPGWyGc9.Q/mMyjycNO.9ylh40Vc.0iiqU/MtR7MKKIuOgbKkOeD3EpPMtN2SBForxog2ZCqv0kbu0
     #password: "arista123!"
-
 
 # OOB Management network default gateway.
 mgmt_interface: Management1
@@ -56,12 +76,37 @@ sflow:
   source_interface: loopback0
   run: true
 
-# Spanning tree
-spanning_tree:
-  mode: mstp
-
 event_monitor:
   enabled: true
 
+# Allow 3rd party transceivers on all switches
+# DO NOT DISTRIBITE LICENSE OR CAPABILITY
+service_unsupported_transceiver:
+  license_name: FoxNetworksWoodlandsTesting
+  license_key: e9ae09fb
 
-  
+#aliases:
+#  conint sh interface | I connected
+#  connect show interfaces status connected
+# alias descr show int descr
+# alias drops watch 1 diff show int coun dis | nz
+# alias dump bash tcpdump -i %1
+# alias loadConfigBase configure replace flash:/base_config_media-ptp-1
+# alias ptpcount watch 1 diff sh ptp interface counters | egrep 'Ethernet|Manage'| grep -v "received: 0" | grep -v sent
+# alias ptpmgmt watch 1 diff sh ptp int count | egrep "Management messages received: | Ethernet" | nz
+# alias rates watch 1 diff show int count rates | nz
+# alias routeage bash echo show ip route | cliribd
+# alias saveConfigBase copy running-config flash:/base_config_media-ptp-1
+# alias senz show interface counter error | nz
+# alias senzwatch watch 1 diff show interface counter error | nz
+# alias shmc show int | awk '/^[A-Z]/ { intf = $1 } /, address is/ { print intf, $6 }'
+# alias shptp show ptp int counters drop
+# alias snoopcount watch 1 diff sh ip igmp snooping counters | nz
+# alias snoopgroup watch 1 diff sh ip igmp snooping groups | nz
+# alias snz show interface counter | nz
+# alias spd show port-channel %1 detail all
+# alias sqnz show interface counter queue | nz
+# alias srnz show interface counter rate | nz
+# alias watchptp watch 1 diff sh ip igmp snooping group 224.0.1.129 | nz
+
+

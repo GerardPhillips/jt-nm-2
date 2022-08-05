@@ -1,16 +1,28 @@
 ---
-ANSIBLE_CONFIG: /home/user/avd/projects/ansible.cfg
-
-router_multicast:
-  ipv4:
-    routing: true
+underlay_multicast: true
+# enables pim on all uplinks
+# ipv4 multicast, but no RP (yet)
+# Replaces
+#router_multicast:
+#  ipv4:
+#    routing: true
 
 ptp:
-  mode: boundary
+  enabled: true
+  profile: aes67-r16-2016 #although this is the default
   domain: 42
-  monitor:
-    threshold:
-      offset_from_master: 200
 
+core_interfaces:
+  p2p_links:
+    -
+      # Nodes where this link should be configured
+      nodes: [ jt-nm-amber-leaf-5, jt-nm-blue-leaf-5 ]
+      # Interfaces where this link should be configured | Required unless using port-channels
+      interfaces: [ Ethernet51, Ethernet51 ]
+      # Enable PTP
+      ptp_enable: true
+      # Do not add this interface to underlay routing protocol
+      include_in_underlay_protocol: false
 
+network_ports: "{{ lookup('file', 'media_hosts.yml') | from_yaml }}"
   

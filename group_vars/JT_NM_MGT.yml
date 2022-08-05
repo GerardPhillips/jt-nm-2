@@ -1,0 +1,35 @@
+---
+tenants:
+  JT_NM_MGT:
+    vrfs:
+      default:
+        redistribute_static: true
+        static_routes:
+          - destination_address_prefix: 0.0.0.0/0
+            gateway: 192.168.3.253
+            name: Firewall
+        svis:
+          1001:
+            name: MAIN
+            enabled: true
+            nodes:
+              jt-nm-mgt-1:
+                ip_address: 192.168.3.254/22
+          2001:
+            name: NMOS-1
+            enabled: true
+            nodes:
+              jt-nm-mgt-1:
+                ip_address: 192.168.7.254/22
+          2002:
+            name: NMOS-2
+            enabled: true
+            nodes:
+              jt-nm-mgt-1:
+                ip_address: 192.168.11.254/22
+          2003:
+            name: NMOS-3
+            enabled: true
+            nodes:
+              jt-nm-mgt-1:
+                ip_address: 192.168.15.254/22

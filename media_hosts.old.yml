@@ -1,0 +1,44 @@
+---
+# THIS SHOULD BE AT THE PLAYBOOK LEVEL
+- switches:
+    - "jt-nm-amber-leaf-1"
+  switch_ports:
+    - "Ethernet1"
+  description: Main Testing Network
+  speed: 10000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.100.1/31
+    pim:
+      ipv4:
+        sparse_mode: True
+    ip_helpers:
+      192.168.0.20: {}
+  ptp:
+    enable: true
+
+- switches:
+    - "jt-nm-amber-leaf-5"
+  switch_ports:
+    - "Ethernet1"
+  description: GM1 Connection
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.0.50/31
+  ptp:
+    enable: true
+    role: bmca
+
+- switches:
+    - "jt-nm-blue-leaf-5"
+  switch_ports:
+    - "Ethernet1"
+  description: GM2 Connection
+  speed: 1000full
+  structured_config:
+    type: routed
+    ip_address: 192.168.0.150/31
+  ptp:
+    enable: true
+    role: bmca

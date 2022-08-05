@@ -1,10 +1,4 @@
 ---
-fabric_name: JT_NM
-dc_name: JT_NM_FABRIC
-pod_name: JT_NM_MGT_LEAFS
-ANSIBLE_CONFIG: /home/user/avd/projects/ansible.cfg
-
-
 port_profiles:
   MAIN:
     mode: access
@@ -19,22 +13,1048 @@ port_profiles:
     mode: access
     vlans: "2003"
 
+network_ports:
+  - switches:
+      - "jt-nm-mgt-[1-4]"
+    switch_ports:
+      - "Ethernet1-48"
+    profile: MAIN
+    description: Main Testing Network
 
-servers:
-  S1P1: # Server name
-    adapters:
-      - type: nic
-        endpoint_ports: [Eth0]      # Port on server/endpoint
-        switch_ports: [Ethernet1]   # Port on switch connected to the server/endpoint port
-        switches: [jt-nm-mgt-1]     # Switch connected to the server/endpoint
-        #profile: MAIN               # Port profile to apply
-        vlans: 11
-        mode: access
-  S1P2: # Server name
-    adapters:
-      - type: nic
-        endpoint_ports: [Eth0]      # Port on server/endpoint
-        switch_ports: [Ethernet2]   # Port on switch connected to the server/endpoint port
-        switches: [jt-nm-mgt-1]     # Switch connected to the server/endpoint
-        profile: MAIN               # Port profile to apply
+# servers:
+#   S1P1: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet1]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-1]     # Switch connected to the server/endpoint
+#         #profile: MAIN               # Port profile to apply
+#         vlans: 11
+#         mode: access
+#   S1P2: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet2]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-1]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+
+#   # MGT Leaf 1
+#   jt-nm-mgt-2-Eth1: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet1]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth2: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet2]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth3: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet3]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth4: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet4]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth5: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet5]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth6: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet6]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth7: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet7]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth8: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet8]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth9: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet9]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth10: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet10]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth11: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet11]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth12: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet12]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth13: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet13]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth14: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet14]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth15: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet15]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth16: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet16]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
   
+#   jt-nm-mgt-2-Eth17: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet17]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth18: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet18]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth19: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet19]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth20: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet20]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth21: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet21]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth22: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet22]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth23: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet23]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth24: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet24]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth25: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet25]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth26: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet26]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth27: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet27]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth28: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet29]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth29: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet29]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth30: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet30]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth31: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet31]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth32: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet32]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+  
+#   jt-nm-mgt-2-Eth33: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet33]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth34: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet34]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth35: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet35]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth36: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet36]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth37: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet37]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth38: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet38]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth39: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet39]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth40: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet40]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth41: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet41]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth42: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet42]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth43: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet43]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth44: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet44]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth45: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet45]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth46: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet46]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth47: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet47]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-2-Eth48: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet48]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-2]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+
+#   # MGT Leaf 2
+#   jt-nm-mgt-3-Eth1: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet1]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth2: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet2]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth3: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet3]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth4: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet4]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth5: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet5]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth6: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet6]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth7: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet7]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth8: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet8]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth9: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet9]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth10: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet10]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth11: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet11]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth12: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet12]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth13: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet13]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth14: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet14]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth15: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet15]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth16: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet16]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+  
+#   jt-nm-mgt-3-Eth17: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet17]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth18: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet18]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth19: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet19]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth20: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet20]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth21: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet21]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth22: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet22]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth23: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet23]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth24: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet24]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth25: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet25]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth26: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet26]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth27: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet27]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth28: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet29]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth29: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet29]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth30: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet30]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth31: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet31]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth32: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet32]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+  
+#   jt-nm-mgt-3-Eth33: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet33]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth34: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet34]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth35: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet35]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth36: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet36]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth37: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet37]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth38: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet38]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth39: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet39]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth40: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet40]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth41: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet41]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth42: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet42]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth43: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet43]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth44: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet44]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth45: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet45]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth46: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet46]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth47: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet47]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-3-Eth48: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet48]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-3]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+
+#   # MGT Leaf 3
+#   jt-nm-mgt-4-Eth1: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet1]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth2: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet2]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth3: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet3]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth4: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet4]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth5: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet5]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth6: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet6]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth7: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet7]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth8: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet8]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth9: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet9]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth10: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet10]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth11: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet11]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth12: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet12]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth13: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet13]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth14: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet14]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth15: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet15]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth16: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet16]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+  
+#   jt-nm-mgt-4-Eth17: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet17]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth18: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet18]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth19: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet19]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth20: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet20]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth21: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet21]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth22: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet22]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth23: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet23]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth24: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet24]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth25: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet25]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth26: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet26]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth27: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet27]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth28: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet29]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth29: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet29]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth30: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet30]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth31: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet31]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth32: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet32]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+  
+#   jt-nm-mgt-4-Eth33: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet33]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth34: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet34]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth35: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet35]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth36: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet36]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth37: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet37]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth38: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet38]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth39: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet39]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth40: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet40]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth41: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet41]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth42: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet42]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth43: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet43]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth44: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet44]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth45: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet45]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth46: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet46]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth47: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet47]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
+#   jt-nm-mgt-4-Eth48: # Server name
+#     adapters:
+#       - type: nic
+#         endpoint_ports: [Eth0]      # Port on server/endpoint
+#         switch_ports: [Ethernet48]   # Port on switch connected to the server/endpoint port
+#         switches: [jt-nm-mgt-4]     # Switch connected to the server/endpoint
+#         profile: MAIN               # Port profile to apply
